@@ -5,7 +5,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="portt.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
 <body>
     
 </body>
@@ -23,25 +24,17 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-  
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Projects</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#omeni">O meni</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">nesto</a>
+            <a class="nav-link" href="#moja">Moja postignuca</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">nesto</a>
+            <a class="nav-link" href="#aspi">Aspiracije</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#konkt">Kontakt</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -54,14 +47,14 @@
   <div class="text-center">
         <h1>Luka Boricic</h1>
   </div>
-    <body>
+    <body style="background-color: rgb(183, 222, 222);">
       <div class="container">
           <div class="row justify-content-center">
               <div class="text-center col-sm-6">
-                  <img  src="PROF0439.JPG" class="ss">
+                  <img  src="PROF0439.JPG" class="ss col-sm-6 col-6">
                   <div class="intro-text">
                       <hr class="star-light">
-                      <h2>O MENI</h2>
+                      <h2 id="omeni">O MENI</h2>
                       <span class="skills">Moje ime je Luka Boricic.Imam 18 godina i trenutno sam ucenik Prve kragujevacke gimnazije u Kragujevcu.Zanima me web programiranje, web design, objektno programiranje. U slobodno vreme se bavim sportom.</span>
                   </div>
               </div>
@@ -69,28 +62,63 @@
       </div>
     </body>
     <hr class="star-light">
-<h1 class="fw-bold text-center pt-5 pb-3" id="mywork">Moja postignuca</h1>
+<h1 class="fw-bold text-center pt-5 pb-3" id="moja">Moja postignuca</h1>
 <div class="container">
     <div class="justify-content-between d-flex flex-row mb-3 p-1 gap-2  pt-5">
       <div class="bb card d-flex flex-column p-1 text-center bg-secondary" style="background-color: rgb(86, 83, 83);">
-        <img class="mx-auto" src="seoski turizam.jpg" alt="first" style="max-width:300px ; max-height:300px">
+        <img class="mx-auto col-sm-6 col-6" src="seoski turizam.jpg" alt="first" style="max-width:300px ; max-height:300px">
         <p>Napravio sam bazu podataka za seoski turizam.</p>
       </div>
         <div class="bb card d-flex flex-column p-1 text-center bg-secondary" style="background-color: rgb(86, 83, 83);">
-          <img class="mx-auto" src="html.jpg" alt="second" style="max-width:300px;max-height:300px">
-          <p>Pravio sam osnovne sajtove u html-u i css-u.</p>
+          <img class="mx-auto col-sm-6 col-6" src="html.jpg" alt="second" style="max-width:300px;max-height:300px">
+          <p>Pravio sam sajtove u html-u i css-u.</p>
         </div>
         <div class="bb card d-flex flex-column p-1 text-center bg-secondary" style="background-color: rgb(86, 83, 83);">
-          <img class="mx-auto" src="matematika.jpg" alt="third" style="max-width:300px ; max-height:300px">
+          <img class="mx-auto col-sm-6 col-6" src="matematika.jpg" alt="third" style="max-width:300px ; max-height:300px">
           <p>Ucestvovao sam u raznim takmicenjima iz matematike.</p>
         </div>
       </div>
     </div>
     <hr class="star-light">
 <div class="container">
-  <h1 class="fw-bold text-center pt-5 pb-3" id="aspirations">Aspiracije</h1>
+  <h1 class="fw-bold text-center pt-5 pb-3" id="aspi">Aspiracije</h1>
     <div class="d-flex flex-column mb-6 p-1 gap-2 pt-3">
-      <img class="bb ski mx-auto" src="aspiracija.webp" alt="firm" style="max-width:500px">
+      <img class="bb ski mx-auto col-sm-6 col-6" src="aspiracija.webp" alt="firm" style="max-width:500px">
       <p class="text-center pt-3 fs-3">Imam puno ciljeva za buducnost, a neki od njih su da upisem zeljeni fakultet, zavrsim cetvrtu godinu sa odlicnim uspehom i da budem dobar covek.</p>
     </div>
 </div>
+<hr class="star-light">
+<div class="d-flex justify-content-center">
+  <h1 id="konkt">
+    Kontakt
+  </h1>
+</div>
+<section id="contact" class="container my-3">
+<div class="d-flex justify-content-center col-md-12">
+  <form>
+    <div class="form-group">
+      <label for="name">
+        <p style="font-size: 15px; font-weight: bold;">Ime i prezime</p>
+      </label>
+      <input type="text" class="form-control" id="name" placeholder="Vase ime i prezime" size="50" required>
+    </div>
+      <div class="form-group">
+      <label for="email">
+        <p style="font-size: 15px; font-weight: bold;" class="vl">Telefon</p>
+      </label>
+      <input type="text" class="form-control" id="email" placeholder="Vas broj telefona" size="50" required>
+      </div>
+    <button class="btn btn-secondary mt-3" type="submit">Submit</button>
+    </div>
+  </form> 
+</div>
+</section>
+<footer style="background-color: rgb(86, 83, 83);"class="justify-content-center text-center p-5 mb-0 mt-3">
+  <a href="https://www.instagram.com/luka.boricicc/" style="text-decoration: none;">
+      <i class="fa-brands fa-instagram fa-2xl social-icon"></i>
+  </a>
+  <a href="https://github.com/lukaa102" style="text-decoration: none;">
+      <i class="fa-brands fa-github fa-2xl social-icon"></i>
+  </a>
+  <p class="pt-3" style="color: #d3ddec;">© Luka Boricic. All rights reserved.</p>
+</footer>
