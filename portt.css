@@ -43,3 +43,8 @@
     max-width: 400px;
     margin: 0 auto;
   }
+.bb:hover{
+  transform: scale(1.1);
+  transition: ease 1s;
+  background-color: #483d3d;
+}
