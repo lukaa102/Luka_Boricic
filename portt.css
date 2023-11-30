@@ -47,4 +47,8 @@
   transform: scale(1.1);
   transition: ease 1s;
   background-color: #483d3d;
+  color: white;
+}
+.ski {
+  border: 15px solid #555;
 }
